@@ -1,0 +1,9 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
