@@ -1,0 +1,43 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Offer  */
+.offer__item .offer__header p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: #ff6600;
+    display: block;
+    font-family: 'Pacifico', cursive;
+}
+
+.offer__item .offer__header h2 {
+    text-transform: none;
+}
+  
+.offer__item p:not(p.title-heading) {
+    --font-height: 1.8rem;
+    font-size: 18px;
+    line-height: 28px;
+    color: #161c2db3;
+    font-weight: 400;
+} 

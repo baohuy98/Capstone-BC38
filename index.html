@@ -5,51 +5,668 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diner</title>
+
+    <!-- Boostrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Animation  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- Google Font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet">
 
     <!-- Font awesome  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/style.css">
+    
+    <!-- Css  -->
+    <link rel="stylesheet" href="./css/home.css">
 
 </head>
 <body>
-    <!-- Banner  -->
-    <section class="banner">
-        <div class="container">
-            <div class="banner__content">
-                <div class="title__logo">
-                    <h1>
-                        <a class="logo" href="#">Diner</a>
-                    </h1>
-                </div>
-                <div class="search__right">
-                    <div class="search-bar">
-                        <div class="search">
-                            <input type="text" placeholder="Search here.." style=" border:none; font-size: 20px; ">
-                            <button>
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                            </button>
+    <!-- Header  -->
+    <header class="header">
+        <div class="container header__content">
+            <nav class="header__navbar navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-white" href="#">Diner</a>
+                    <div class="header__navbar-more d-flex align-items-center">
+                        <div class="header__navbar-search hide-on-mobile">
+                            <form action="" class="d-flex align-items-center">
+                                <input type="text" placeholder="Search here...">
+                                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </form>
+                        </div>
+                        <div class="header__mode-control text-white">
+                            <i class="fa-regular fa-moon"></i>
                         </div>
                     </div>
-                    <div class="navbar">
-                        <a href="#">Home</a>
-                        <a href="#">About</a>
-                        <a href="#">Services</a>
-                        <a href="#">Blog</a>
-                        <a href="#">404</a>
-                        <a href="#">landing Page</a>
-                        <a href="#">Contact</a>
-                        <a href="#">Shot Codes</a>
-                        <a href="#">Email</a>
+                    <button 
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup"
+                        aria-controls="navbarNavAltMarkup"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div class="header__navbar-collapse collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="header__nav navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="#">Services</a>
+                            <a class="nav-link" href="#">Blog</a>
+                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="#">Email</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+        
+          
+    <!-- Banner  -->
+      <section class="banner">
+        <div class="container banner__content">
+            <div class="banner__info text-white">
+              <h2>The Only Thing We Love More Than Food Is You!</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
+                vitae sit.Ea ipsum sed consequuntur illum facere.
+              </p>
+  
+              <button class="button button-transparent button__banner">
+                Read more
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+      </section>
+    
+    <!-- About Us  -->
+    <section class="section-content aboutUs">
+        <div class="container aboutUs__content">
+            <div class="row g-5">
+                <div class="aboutUs__col col-lg-5">
+                    <div class="aboutUs__item section-content-fw">
+                        <header class="section-heading aboutUs__header">
+                            <p class="title-heading">About us</p>
+                            <h2>We found our creative space that is open for you.</h2>
+                        </header>
+                    </div>
+                </div>
+                <div class="aboutUs__col col-lg-7">
+                    <div class="aboutUs__item">
+                        <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
+                            ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor
+                            sit amet elit. Non quae, fugiat nihil ad. Lorem ipsum dolor
+                            sit amet. Lorem ipsum init dolor sit, amet elit. Dolor ipsum
+                            non velit, culpa!Lorem ipsum init dolor sit.
+                        </p>
+                        <p class="mt-3">
+                            Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
+                            ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor
+                            sit amet elit. Non quae, fugiat nihil ad. Lorem ipsum dolor
+                            sit amet.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-
     </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/js/bootstrap.min.js" integrity="sha512-5BqtYqlWfJemW5+v+TZUs22uigI8tXeVah5S/1Z6qBLVO7gakAOtkOzUtgq6dsIo5c0NJdmGPs0H9I+2OHUHVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-</body>
+    <!-- Info  -->
+    <section class="info">
+        <div class="row g-0">
+            <div class="info__col col-lg-6 col-md-12 col-12 col-sm-12">
+                <div class="info__item info__item-left">
+                    <div class="info__item-bg"></div>
+                </div>
+            </div>
+            <div class="info__col col-lg-6 col-md-12 col-12 col-sm-12">
+                <div class="info__item info__item-right">
+                    <header class="info__item-right-header">
+                        <p class="text-white">More than 3000 Restaurants</p>
+                        <h2>Book a table easly at the best price</h2>
+                    </header>
+                    <p class="text-white my-5">Vestibulum ante ipsum primis in faucibus orci luctus turpis
+                        sodales quis. Integer sit amet mattis quam.Vivamus a ligula quam
+                        tesque et libero ut justo ultrices in.
+                    </p>
+                    <footer class="info__item-right-footer">
+                        <div class="row g-5">
+                            <div class="info__item-right-col col-lg-6 col-sm-6 col-6">
+                                <div class="info__item-right-item">
+                                    <div class="info__icon">
+                                        <i class="fa-solid fa-thumbs-up"></i>
+                                    </div>
+                                    <a href="#" class="my-4">Best Deals</a>
+                                    <p>
+                                        Lorem ipsum viverra feugiat. Pellen tesque libero justo.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="info__item-right-col col-lg-6 col-sm-6 col-6">
+                                <div class="info__item-right-item">
+                                    <div class="info__icon">
+                                        <i class="fa-solid fa-utensils"></i>
+                                    </div>
+                                    <a href="#" class="my-4">Best Food</a>
+                                    <p>
+                                        Lorem ipsum viverra feugiat. Pellen tesque libero justo.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu  -->
+    <section class="menu">
+        <div class="container">
+            <header class="menu-header">
+                <p>What's New</p>
+                <h2>Popular Catagories</h2>
+            </header>
+            <div class="menu-content">
+                <div class="row">
+                    <div class="col">
+                        <div class="item">
+                            <div class="menu__img">
+                                <img src="./Dinner/images/g1.jpg" alt="1">
+                            </div>
+                            <div class="menu__text">
+                                <a href=""><h3>Vegetian</h3></a>
+                                <h4><span>$350</span></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="item">
+                            <div class="menu__img">
+                                <img src="./Dinner/images/g2.jpg" alt="1">
+                            </div>
+                            <div class="menu__text">
+                                <a href=""><h3>Vegetian</h3></a>
+                                <h4><span>$350</span></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="item">
+                            <div class="menu__img">
+                                <img src="./Dinner/images/g3.jpg" alt="1">
+                            </div>
+                            <div class="menu__text">
+                                <a href=""><h3>Vegetian</h3></a>
+                                <h4><span>$350</span></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="item">
+                            <div class="menu__img">
+                                <img src="./Dinner/images/g4.jpg" alt="1">
+                            </div>
+                            <div class="menu__text">
+                                <a href=""><h3>Vegetian</h3></a>
+                                <h4><span>$350</span></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="item">
+                            <div class="menu__img">
+                                <img src="./Dinner/images/g5.jpg" alt="1">
+                            </div>
+                            <div class="menu__text">
+                                <a href=""><h3>Vegetian</h3></a>
+                                <h4><span>$350</span></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="item">
+                            <div class="menu__img">
+                                <img src="./Dinner/images/g6.jpg" alt="1">
+                            </div>
+                            <div class="menu__text">
+                                <a href=""><h3>Vegetian</h3></a>
+                                <h4><span>$350</span></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    <!-- Features  -->
+    <section class="section-content feature">
+        <div class="container feature__content">
+            <div class="row g-5">
+                <div class="feature__col col-lg-4 col-md-6 col-12 col-sm-12">
+                    <div class="feature__item">
+                        <header class="feature__item-header d-flex">
+                            <div class="feature__item-header-icon">
+                                <i class="fa-solid fa-users"></i>
+                            </div>
+                            <div class="feature__item-text">
+                                <p class="mb-4">01</p>
+                                <a href="#">Soup</a>
+                            </div>
+                        </header>
+                        <p class="mt-3 mb-2"> Lorem ipsum dolor sit amet consectetur ipsum elit. Qui
+                            eligendi vitae sit.
+                        </p>
+                    </div>
+                </div>
+                <div class="feature__col col-lg-4 col-md-6 col-12 col-sm-12">
+                    <div class="feature__item">
+                        <header class="feature__item-header d-flex">
+                            <div class="feature__item-header-icon">
+                                <i class="fa-solid fa-users"></i>
+                            </div>
+                            <div class="feature__item-text">
+                                <p class="mb-4">02</p>
+                                <a href="#">Drinks</a>
+                            </div>
+                        </header>
+                        <p class="mt-3 mb-2"> Lorem ipsum dolor sit amet consectetur ipsum elit. Qui
+                            eligendi vitae sit.
+                        </p>
+                    </div>
+                </div>
+                <div class="feature__col col-lg-4 col-md-6 col-12 col-sm-12">
+                    <div class="feature__item">
+                        <header class="feature__item-header d-flex">
+                            <div class="feature__item-header-icon">
+                                <i class="fa-solid fa-users"></i>
+                            </div>
+                            <div class="feature__item-text">
+                                <p class="mb-4">03</p>
+                                <a href="#">Pizza</a>
+                            </div>
+                        </header>
+                        <p class="mt-3 mb-2"> Lorem ipsum dolor sit amet consectetur ipsum elit. Qui
+                            eligendi vitae sit.
+                        </p>
+                    </div>
+                </div>
+                <div class="feature__col col-lg-4 col-md-6 col-12 col-sm-12">
+                    <div class="feature__item">
+                        <header class="feature__item-header d-flex">
+                            <div class="feature__item-header-icon">
+                                <i class="fa-solid fa-users"></i>
+                            </div>
+                            <div class="feature__item-text">
+                                <p class="mb-4">04</p>
+                                <a href="#">Breakfast</a>
+                            </div>
+                        </header>
+                        <p class="mt-3 mb-2"> Lorem ipsum dolor sit amet consectetur ipsum elit. Qui
+                            eligendi vitae sit.
+                        </p>
+                    </div>
+                </div>
+                <div class="feature__col col-lg-4 col-md-6 col-12 col-sm-12">
+                    <div class="feature__item">
+                        <header class="feature__item-header d-flex">
+                            <div class="feature__item-header-icon">
+                                <i class="fa-solid fa-users"></i>
+                            </div>
+                            <div class="feature__item-text">
+                                <p class="mb-4">05</p>
+                                <a href="#">Lunch</a>
+                            </div>
+                        </header>
+                        <p class="mt-3 mb-2"> Lorem ipsum dolor sit amet consectetur ipsum elit. Qui
+                            eligendi vitae sit.
+                        </p>
+                    </div>
+                </div>
+                <div class="feature__col col-lg-4 col-md-6 col-12 col-sm-12">
+                    <div class="feature__item">
+                        <header class="feature__item-header d-flex">
+                            <div class="feature__item-header-icon">
+                                <i class="fa-solid fa-users"></i>
+                            </div>
+                            <div class="feature__item-text">
+                                <p class="mb-4">06</p>
+                                <a href="#">Dinner</a>
+                            </div>
+                        </header>
+                        <p class="mt-3 mb-2"> Lorem ipsum dolor sit amet consectetur ipsum elit. Qui
+                            eligendi vitae sit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Middle  -->
+    <section class="middle">
+        <div class="container middle__content">
+            <div class="middle__top">
+                <h2 class="text-white mb-5"> Deliciousness jumping into the mouth.</h2>
+                <div class="middle__buttons d-flex justify-content-center pb-5">
+                    <button class="button button-transparent button__banner">
+                      Read more
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                    <a href="#" class="button button-submit button-primary d-flex justify-content-center">
+                       Contact Us
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                  </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Number  -->
+    <section class="number">
+        <div class="container number__content">
+            <div class="row g-5">
+                <div class="number__col col-lg-3 col-md-6 col-6 col-sm-6">
+                    <div class="number__item">
+                        <i class="fa-regular fa-building"></i>
+                        <h2 class="my-4 number__num">15,100</h2>
+                        <h4>Branches</h4>
+                    </div>
+                </div>
+                <div class="number__col col-lg-3 col-md-6 col-6 col-sm-6">
+                    <div class="number__item">
+                        <i class="fa-solid fa-utensils"></i>
+                        <h2 class="my-4 number__num">19,256</h2>
+                        <h4>Food items</h4>
+                    </div>
+                </div>
+                <div class="number__col col-lg-3 col-md-6 col-6 col-sm-6">
+                    <div class="number__item">
+                        <i class="fa-solid fa-users"></i>
+                        <h2 class="my-4 number__num">12,100</h2>
+                        <h4>Chefs</h4>
+                    </div>
+                </div>
+                <div class="number__col col-lg-3 col-md-6 col-6 col-sm-6">
+                    <div class="number__item">
+                        <i class="fa-regular fa-face-smile"></i>
+                        <h2 class="my-4 number__num">2,560</h2>
+                        <h4>Happy Customers</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video  -->
+    <section class="video">                                                                  
+        <div class="bg-video">
+            <div class="container">
+                <div class="video-info">
+                    <a href="#" class="play-view">
+                        <span class="video-icon">
+                            <i class="fa-solid fa-play"></i>      
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Post  -->
+    <section class="blog-post">
+        <div class="container">
+            <header class="blog-header">
+                <p>Latest Posts </p>
+                <h2>Blog Posts</h2>
+            </header>
+            <div class="blog-cont">
+                <div class="row">
+                    <div class="col">
+                        <div class="item">
+                            <div class="blog-img">
+                                <img src="./Dinner/images/banner1.jpg" alt="1">
+                            </div>
+                            <div class="blog-icon">
+                                <p>Reciepe</p>
+                                <i class="fa-regular fa-clock"></i>
+                                <span>10 Mins Cook</span>
+                            </div>
+                            <div class="blog-text">
+                                <a href=""><h1>the best cookie receipes to bake this weekend</h1></a>
+                                <p>Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi vitae sit.</p>
+                            </div>
+                            <div class="blog-info">
+                                <div class="img">
+                                    <img src="./Dinner/images/team1.jpg" alt="2">
+                                    <span>Rashed Kabir</span>
+                                </div>
+                                <div class="text">
+                                    <a href="">
+                                        <span>Read More</span>
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="item">
+                            <div class="blog-img">
+                                <img src="./Dinner/images/banner3.jpg" alt="3">
+                            </div>
+                            <div class="blog-icon">
+                                <p>Soup</p>
+                                <i class="fa-regular fa-clock"></i>
+                                <span>10 Mins Cook</span>
+                            </div>
+                            <div class="blog-text">
+                                <a href=""><h1>the best cookie receipes to bake this weekend</h1></a>
+                                <p>Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi vitae sit.</p>
+                            </div>
+                            <div class="blog-info">
+                                <div class="img">
+                                    <img src="./Dinner/images/team2.jpg" alt="4">
+                                    <span>Rashed Kabir</span>
+                                </div>
+                                <div class="text">
+                                    <a href="">
+                                        <span>Read More</span>
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="item">
+                            <div class="blog-img">
+                                <img src="./Dinner/images/banner1.jpg" alt="3">
+                            </div>
+                            <div class="blog-icon">
+                                <p>Soup</p>
+                                <i class="fa-regular fa-clock"></i>
+                                <span>10 Mins Cook</span>
+                            </div>
+                            <div class="blog-text">
+                                <a href=""><h1>the best cookie receipes to bake this weekend</h1></a>
+                                <p>Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi vitae sit.</p>
+                            </div>
+                            <div class="blog-info">
+                                <div class="img">
+                                    <img src="./Dinner/images/team3.jpg" alt="4">
+                                    <span>Rashed Kabir</span>
+                                </div>
+                                <div class="text">
+                                    <a href="">
+                                        <span>Read More</span>
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials  -->
+    <section class="section-content testimonials">
+        <div class="container testimonials__content">
+            <header class="section-heading testimonials__header mb-5">
+                <p class="title-heading">Testimonials</p>
+                <h2>What People Say</h2>
+            </header>
+
+            <div class="testimonials__body owl-carousel owl-loaded owl-theme">
+                <div class="owl-stage-outer">
+                    <div class="owl-stage">
+                        <div class="testimonials__item item text-center">
+                            <a href="#">
+                                <img src="./Dinner/images/team1.jpg" alt="team1" />
+                            </a>
+                            <blockquote>
+                                <q> OMG ! I cannot believe. It's Awesome </q>
+                            </blockquote>
+                            <p class="my-4">
+                                My new site is so much faster and easier to work with than
+                                my old site. They are here to help the customers to get
+                                their success. Nemo sit eos, quod minus eius illo labore.
+                                Pellen tesque libero ut justo, ultrices in ligula.
+                            </p>
+                            <div class="testimonials__info">
+                                <h3>Johnson william</h3>
+                                <p class="testimonials__identity mt-3">Customer</p>
+                            </div>
+                        </div>
+                        <div class="testimonials__item item text-center">
+                            <a href="#">
+                                <img src="./Dinner/images/team2.jpg" alt="team2" />
+                            </a>
+                            <blockquote>
+                                <q> OMG ! I cannot believe. It's Awesome </q>
+                            </blockquote>
+                            <p class="my-4">
+                                My new site is so much faster and easier to work with than
+                                my old site. They are here to help the customers to get
+                                their success. Nemo sit eos, quod minus eius illo labore.
+                                Pellen tesque libero ut justo, ultrices in ligula.
+                            </p>
+                            <div class="testimonials__info">
+                                <h3>Alexander sakura</h3>
+                                <p class="testimonials__identity mt-3">Customer</p>
+                            </div>
+                        </div>
+                        <div class="testimonials__item item text-center">
+                            <a href="#">
+                                <img src="./Dinner/images/team3.jpg" alt="team3" />
+                            </a>
+                            <blockquote>
+                                <q> OMG ! I cannot believe. It's Awesome </q>
+                            </blockquote>
+                            <p class="my-4">
+                                My new site is so much faster and easier to work with than
+                                my old site. They are here to help the customers to get
+                                their success. Nemo sit eos, quod minus eius illo labore.
+                                Pellen tesque libero ut justo, ultrices in ligula.
+                            </p>
+                            <div class="testimonials__info">
+                                <h3>Johnson Wilson</h3>
+                                <p class="testimonials__identity mt-3">Customer</p>
+                            </div>
+                        </div>
+                        <div class="testimonials__item item text-center">
+                            <a href="#">
+                                <img src="./Dinner/images/team1.jpg" alt="team1" />
+                            </a>
+                            <blockquote>
+                                <q> OMG ! I cannot believe. It's Awesome </q>
+                            </blockquote>
+                            <p class="my-4">
+                                My new site is so much faster and easier to work with than
+                                my old site. They are here to help the customers to get
+                                their success. Nemo sit eos, quod minus eius illo labore.
+                                Pellen tesque libero ut justo, ultrices in ligula.
+                            </p>
+                            <div class="testimonials__info">
+                                <h3>Julia sakura</h3>
+                                <p class="testimonials__identity mt-3">Customer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer  -->
+    <section class="footer">
+        <div class="container">
+            <div class="item">
+                <div class="col contact">
+                    <a href=""><h2>Diner</h2></a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et consectetur provident vel cupiditate facere. Aliquid.</p>
+                    <div class="foot-icon">
+                       <a href=""> <i class="fa-brands fa-facebook"></i></a>
+                       <a href=""><i class="fa-brands fa-twitter"></i></a> 
+                       <a href=""><i class="fa-brands fa-instagram"></i></a>
+                       <a href=""><i class="fa-brands fa-linkedin"></i></a> 
+                    </div>
+                </div>
+                <div class="col foot-link">
+                    <h2>Usefull Links</h2>
+                    <a href="#">About Us</a>
+                    <a href="#">Services</a>
+                    <a href="#">Blog posts</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Contact us</a>
+                </div>
+                <div class="col foot-link">
+                    <h2>More Info</h2>
+                    <a href="#">History</a>
+                    <a href="#">Vision & Values</a>
+                    <a href="#">Awards</a>
+                    <a href="#">Media</a>
+                    <a href="#">Support</a>
+                </div>
+                <div class="col subcribe">
+                    <h2>Subscribe to our Newsletter</h2>
+                    <p>Enter your email and receive the latest news,<br /> updates and special offers from us. </p>
+                    <input type="email" placeholder="Your Email Address" />
+                    <div >
+                        <button class="foot-btn" >Subcribe Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="coppy">
+                <div class="coppy-left">
+                    <p>© 2021 Diner. All rights reserved. Design by <a href=""> W3Layouts</a></p>
+                </div>
+                <div class="coppy-right">
+                    <a href="">Careers</a>
+                    <a href="">Privacy Policy</a>
+                    <a href="">Contact us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+       
+            
+                    
+    
+    
+    
+    <!-- boostrap  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>                                                                                                                                                                                                                                                                             
 </html>
