@@ -21,11 +21,51 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- CSS  -->
-    <link rel="stylesheet" href="./css/about.css"> 
+    <link rel="stylesheet" href="./css/services.css"> 
 </head>
 <body>
     <!-- Heder  -->
-    <header></header>
+    <header class="header">
+        <div class="container header__content">
+            <nav class="header__navbar navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-white" href="#">Diner</a>
+                    <div class="header__navbar-more d-flex align-items-center">
+                        <div class="header__navbar-search hide-on-mobile">
+                            <form action="" class="d-flex align-items-center">
+                                <input type="text" placeholder="Search here...">
+                                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </form>
+                        </div>
+                        <div class="header__mode-control text-white">
+                            <i class="fa-regular fa-moon"></i>
+                        </div>
+                    </div>
+                    <button 
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup"
+                        aria-controls="navbarNavAltMarkup"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div class="header__navbar-collapse collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="header__nav navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="#">Services</a>
+                            <a class="nav-link" href="#">Blog</a>
+                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="#">Email</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
 
     <!-- Wht We Offer  -->
     <section class="section-content offer">
@@ -58,6 +98,8 @@
             </div>
         </div>
     </section>
+
+    
 
 
 

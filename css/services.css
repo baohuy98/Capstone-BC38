@@ -2,7 +2,130 @@
 
 
 
-
+.header {
+    max-height: 350px;
+    background-image: linear-gradient(
+        to right,
+        rgb(236 98 6 / 98%),
+        rgb(5 3 0 / 83%)),
+      url(../Dinner/images/banner2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+  
+.header__navbar {
+    height: 108px;
+    position: relative;
+}
+  
+.header__contact {
+    height: calc(350px - 108px);
+}
+  
+.header__contact p {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 0;
+    color: #fff;
+    text-transform: capitalize;
+}
+  
+.header__contact p a {
+    color: #ff6600;
+    font-weight: 600;
+    font-size: 18px;
+}
+  
+.header__contact p i {
+    font-size: 14px;
+}
+  
+.header__navbar .navbar-brand {
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+  
+  .header__navbar-bar {
+    gap: 20px;
+  }
+  
+.header__navbar-search {
+    height: 46px;
+    width: 240px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 0 10px;
+}
+  
+.header__navbar-search form,
+.header__navbar-search form input {
+    height: 100%;
+    width: 100%;
+}
+  
+.header__navbar-search form input {
+    border-radius: 10px;
+    border: none;
+    padding: 0 6px;
+    font-size: 16px;
+}
+  
+.header__navbar-search form button {
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+}
+  
+.header__navbar-nav i,
+.header__mode-control i {
+    font-size: 24px;
+}
+  
+.header__mode-control i {
+    transform: rotate(-20deg);
+}
+  
+.header__navbar-nav i {
+    cursor: pointer;
+}
+  
+.header__navbar .header__navbar-collapse {
+    justify-content: flex-end;
+    gap: 10px;
+    flex-basis: 0;
+}
+  
+.header__nav .nav-link {
+    font-size: 16px;
+    color: #fff;
+}
+  
+.header__nav .nav-link:hover {
+    color: #ff6600;
+}
+  
+.header__nav .nav-link.active {
+    color: #ff6600;
+}
+  
+.header__navbar .navbar-toggler {
+    color: #fff;
+    font-size: 20px;
+    margin-left: 20px;
+}
+  
+.header__navbar-more {
+    flex: 3;
+    justify-content: flex-end;
+    gap: 20px;
+    margin-right: 10px;
+}
 
 
 
@@ -35,7 +158,6 @@
 }
   
 .offer__item p:not(p.title-heading) {
-    --font-height: 1.8rem;
     font-size: 18px;
     line-height: 28px;
     color: #161c2db3;
