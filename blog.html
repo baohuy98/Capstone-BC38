@@ -32,333 +32,422 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./css/blog.css" />
   </head>
-  <body>
+  <body id="changeTheme">
     <header class="header">
-        <div class="container">
-            <div class="header-left">
-                <div class="logo">
-                    <a href=""><h1>Diner</h1></a>
-                </div>
-                <div class="heade-right">
-                    <div class="form">
-                        <form action="">
-                            <input type="search" placeholder="Search here... ">
-                            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
-                        </form>
-                    </div>
-                    <div class="mobile-nav-button text-center">
-                        <button id="trigger-overlay" type="button"><i class="fa fa-bars" aria-hidden="true"></i></button>
-                    </div>
-                </div>
-                    
-            </div>
-            </div>
-            <div class="header-text"></div>
+      <div class="container header-cont">
+        <div class="head-left">
+          <a href=""><h1>Diner</h1></a>
         </div>
+        <div class="head-right">
+          <div class="form">
+            <form action="">
+              <input type="search" placeholder="Search here..." />
+              <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+            </form>
+          </div>
+          <div class="theme">
+            <button class="btn" id="switchTheme" title="Click to switch theme">
+              <i class="far fa-moon"></i>
+              <i class="far fa-sun"></i>
+            </button>
+          </div>
+          <div class="nav">
+            <!-- Button trigger modal -->
+            <button
+              type="button" class="btn " data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <nav class="navbar">
+                <span class="navbar-toggler-icon navbar-white"></span>
+              </nav>
+            </button>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <a href="">Home</a>
+                    <a href="">About</a>
+                    <a href="">Services</a>
+                    <a href="">Blog</a>
+                    <a href="">404</a>
+                    <a href="">Landing Page</a>
+                    <a href="">Contact</a>
+                    <a href="">Shot codes</a>
+                    <a href="">Email</a>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                      style="display:none ;"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-primary" style="display:none ;">
+                      Save changes
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
     <section class="blog-post">
-        <div class="container blog">
-            <header class="blog-header">
-                <p>Latest Posts </p>
-                <h2>Blog Posts</h2>
-            </header>
-            <div class="blog-cont">
-                <div class="cont-left">
-                    <div class="col">
-                        <div class="item">
-                            <div class="blog-img">
-                                <img src="./Dinner/images/g1.jpg" alt="1">
-                            </div>
-                            <div class="blog-icon">
-                                <p>Reciepe</p>
-                                <i class="fa-regular fa-clock"></i>
-                                <span>10 Mins Cook</span>
-                            </div>
-                            <div class="blog-text">
-                                <a href=""><h1>the best cookie receipes to bake this weekend</h1></a>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                            </div>
-                            <div class="blog-info">
-                                <div class="img">
-                                    <img src="./Dinner/images/team3.jpg" alt="2">
-                                    <span>Rashed Kabir</span>
-                                </div>
-                                <div class="text">
-                                    <a href="">
-                                        <span>Read More</span>
-                                        <i class="fa-solid fa-angle-right"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="item">
-                            <div class="blog-img">
-                                <img src="./Dinner/images/g2.jpg" alt="3">
-                            </div>
-                            <div class="blog-icon">
-                                <p>Soup</p>
-                                <i class="fa-regular fa-clock"></i>
-                                <span>10 Mins Cook</span>
-                            </div>
-                            <div class="blog-text">
-                                <a href=""><h1>the best cookie receipes to bake this weekend</h1></a>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                            </div>
-                            <div class="blog-info">
-                                <div class="img">
-                                    <img src="./Dinner/images/team1.jpg" alt="4">
-                                    <span>Rashed Kabir</span>
-                                </div>
-                                <div class="text">
-                                    <a href="">
-                                        <span>Read More</span>
-                                        <i class="fa-solid fa-angle-right"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="item">
-                            <div class="blog-img">
-                                <img src="./Dinner/images/g3.jpg" alt="5">
-                            </div>
-                            <div class="blog-icon">
-                                <p>Lunch</p>
-                                <i class="fa-regular fa-clock"></i>
-                                <span>10 Mins Cook</span>
-                            </div>
-                            <div class="blog-text">
-                                <a href=""><h1>the best cookie receipes to bake this weekend</h1></a>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                            </div>
-                            <div class="blog-info">
-                                <div class="img">
-                                    <img src="./Dinner/images/team2.jpg" alt="6">
-                                    <span>Rashed Kabir</span>
-                                </div>
-                                <div class="text">
-                                    <a href="">
-                                        <span>Read More</span>
-                                        <i class="fa-solid fa-angle-right"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="item">
-                            <div class="blog-img">
-                                <img src="./Dinner/images/g4.jpg" alt="7">
-                            </div>
-                            <div class="blog-icon">
-                                <p>Diner</p>
-                                <i class="fa-regular fa-clock"></i>
-                                <span>10 Mins Cook</span>
-                            </div>
-                            <div class="blog-text">
-                                <a href=""><h1>the best cookie receipes to bake this weekend</h1></a>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                            </div>
-                            <div class="blog-info">
-                                <div class="img">
-                                    <img src="./Dinner/images/team3.jpg" alt="8">
-                                    <span>Rashed Kabir</span>
-                                </div>
-                                <div class="text">
-                                    <a href="">
-                                        <span>Read More</span>
-                                        <i class="fa-solid fa-angle-right"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="item">
-                            <div class="blog-img">
-                                <img src="./Dinner/images/g5.jpg" alt="9">
-                            </div>
-                            <div class="blog-icon">
-                                <p>Soup</p>
-                                <i class="fa-regular fa-clock"></i>
-                                <span>10 Mins Cook</span>
-                            </div>
-                            <div class="blog-text">
-                                <a href=""><h1>the best cookie receipes to bake this weekend</h1></a>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                            </div>
-                            <div class="blog-info">
-                                <div class="img">
-                                    <img src="./Dinner/images/team1.jpg" alt="10">
-                                    <span>Rashed Kabir</span>
-                                </div>
-                                <div class="text">
-                                    <a href="">
-                                        <span>Read More</span>
-                                        <i class="fa-solid fa-angle-right"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="item">
-                            <div class="blog-img">
-                                <img src="./Dinner/images/g6.jpg" alt="11">
-                            </div>
-                            <div class="blog-icon">
-                                <p>Drinks</p>
-                                <i class="fa-regular fa-clock"></i>
-                                <span>10 Mins Cook</span>
-                            </div>
-                            <div class="blog-text">
-                                <a href=""><h1>the best cookie receipes to bake this weekend</h1></a>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                            </div>
-                            <div class="blog-info">
-                                <div class="img">
-                                    <img src="./Dinner/images/team2.jpg" alt="12">
-                                    <span>Rashed Kabir</span>
-                                </div>
-                                <div class="text">
-                                    <a href="">
-                                        <span>Read More</span>
-                                        <i class="fa-solid fa-angle-right"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+      <div class="container blog">
+        <header class="blog-header">
+          <p>Latest Posts</p>
+          <h2>Blog Posts</h2>
+        </header>
+        <div class="blog-cont">
+          <div class="cont-left">
+            <div class="col">
+              <div class="item">
+                <div class="blog-img">
+                  <img src="./Dinner/images/g1.jpg" alt="1" />
                 </div>
-                <div class="cont-right">
-                    <div class="cont-right">
-                        <div class="lastest ">
-                            <p>Latest recipes</p>
-                            <div class="cont">
-                                <div class="img">
-                                    <img src="./Dinner/images/banner1.jpg" alt="1">
-                                    <a href="">How to make capuchino</a> 
-                                </div>
-                                <div class="img">
-                                    <img src="./Dinner/images/banner2.jpg" alt="2">
-                                    <a href="">Starbucks blond coffee</a>
-                                </div>
-                                <div class="img">
-                                    <img src="./Dinner/images/banner3.jpg" alt="3">
-                                    <a href="">The best Cookie recipes to bake</a>
-                                </div>
-                                <div class="img">
-                                    <img src="./Dinner/images/banner4.jpg" alt="4">
-                                    <a href="">How to make capuchino</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="trending">
-                            <span>Trending posts</span>
-                            <div class="cont">
-                                <img src="./Dinner/images/g3.jpg" alt="1">
-                                <div class="text">
-                                    <h2>12 Curry Recipes<br /> You'll Ever Need</h2>
-                                    <p>Feb 4, 2021</p>
-                                </div>
-                            </div>
-                            <div class="cont">
-                                <img src="./Dinner/images/g3.jpg" alt="2">
-                                <div class="text">
-                                    <h2>Sweet<br /> Strawberry Dink<br/> for Summer</h2>
-                                    <p>Feb 5, 2021</p>
-                                </div>
-                            </div>
-                            <div class="cont">
-                                <img src="./Dinner/images/g6.jpg" alt="3">
-                                <div class="text">
-                                    <h2>How to make<br/> easiest pancakes<br/> ever</h2>
-                                    <p>Feb 6, 2021</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="categori">
-                            <div class="cont-cate">
-                                <p>Categories</p>
-                                <ul>
-                                    <li>Desserts</li>
-                                    <li>Cakes and Biscuits</li>
-                                    <li>Food recipes</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="advertise">
-                            <div class="cont-adv">
-                                <p>Advertisement </p>
-                                <img src="./Dinner/images/g1.jpg" alt="1">
-                            </div>
-                        </div>
-                    </div>
+                <div class="blog-icon">
+                  <p>Reciepe</p>
+                  <i class="fa-regular fa-clock"></i>
+                  <span>10 Mins Cook</span>
                 </div>
+                <div class="blog-text">
+                  <a href=""
+                    ><h1>the best cookie receipes to bake this weekend</h1></a
+                  >
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                </div>
+                <div class="blog-info">
+                  <div class="img">
+                    <img src="./Dinner/images/team3.jpg" alt="2" />
+                    <span>Rashed Kabir</span>
+                  </div>
+                  <div class="text">
+                    <a href="">
+                      <span>Read More</span>
+                      <i class="fa-solid fa-angle-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="blog-btn">
-                <a class="btn-1" href="">1</a>
-                <a class="btn-2" href="">2</a>
-                <a class="btn-2" href="">3</a>
-                <a class="btn-2" href="">Next <i class="fa-solid fa-angle-right"></i></a>
+            <div class="col">
+              <div class="item">
+                <div class="blog-img">
+                  <img src="./Dinner/images/g2.jpg" alt="3" />
+                </div>
+                <div class="blog-icon">
+                  <p>Soup</p>
+                  <i class="fa-regular fa-clock"></i>
+                  <span>10 Mins Cook</span>
+                </div>
+                <div class="blog-text">
+                  <a href=""
+                    ><h1>the best cookie receipes to bake this weekend</h1></a
+                  >
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                </div>
+                <div class="blog-info">
+                  <div class="img">
+                    <img src="./Dinner/images/team1.jpg" alt="4" />
+                    <span>Rashed Kabir</span>
+                  </div>
+                  <div class="text">
+                    <a href="">
+                      <span>Read More</span>
+                      <i class="fa-solid fa-angle-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
+            <div class="col">
+              <div class="item">
+                <div class="blog-img">
+                  <img src="./Dinner/images/g3.jpg" alt="5" />
+                </div>
+                <div class="blog-icon">
+                  <p>Lunch</p>
+                  <i class="fa-regular fa-clock"></i>
+                  <span>10 Mins Cook</span>
+                </div>
+                <div class="blog-text">
+                  <a href=""
+                    ><h1>the best cookie receipes to bake this weekend</h1></a
+                  >
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                </div>
+                <div class="blog-info">
+                  <div class="img">
+                    <img src="./Dinner/images/team2.jpg" alt="6" />
+                    <span>Rashed Kabir</span>
+                  </div>
+                  <div class="text">
+                    <a href="">
+                      <span>Read More</span>
+                      <i class="fa-solid fa-angle-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="item">
+                <div class="blog-img">
+                  <img src="./Dinner/images/g4.jpg" alt="7" />
+                </div>
+                <div class="blog-icon">
+                  <p>Diner</p>
+                  <i class="fa-regular fa-clock"></i>
+                  <span>10 Mins Cook</span>
+                </div>
+                <div class="blog-text">
+                  <a href=""
+                    ><h1>the best cookie receipes to bake this weekend</h1></a
+                  >
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                </div>
+                <div class="blog-info">
+                  <div class="img">
+                    <img src="./Dinner/images/team3.jpg" alt="8" />
+                    <span>Rashed Kabir</span>
+                  </div>
+                  <div class="text">
+                    <a href="">
+                      <span>Read More</span>
+                      <i class="fa-solid fa-angle-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="item">
+                <div class="blog-img">
+                  <img src="./Dinner/images/g5.jpg" alt="9" />
+                </div>
+                <div class="blog-icon">
+                  <p>Soup</p>
+                  <i class="fa-regular fa-clock"></i>
+                  <span>10 Mins Cook</span>
+                </div>
+                <div class="blog-text">
+                  <a href=""
+                    ><h1>the best cookie receipes to bake this weekend</h1></a
+                  >
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                </div>
+                <div class="blog-info">
+                  <div class="img">
+                    <img src="./Dinner/images/team1.jpg" alt="10" />
+                    <span>Rashed Kabir</span>
+                  </div>
+                  <div class="text">
+                    <a href="">
+                      <span>Read More</span>
+                      <i class="fa-solid fa-angle-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="item">
+                <div class="blog-img">
+                  <img src="./Dinner/images/g6.jpg" alt="11" />
+                </div>
+                <div class="blog-icon">
+                  <p>Drinks</p>
+                  <i class="fa-regular fa-clock"></i>
+                  <span>10 Mins Cook</span>
+                </div>
+                <div class="blog-text">
+                  <a href=""
+                    ><h1>the best cookie receipes to bake this weekend</h1></a
+                  >
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                </div>
+                <div class="blog-info">
+                  <div class="img">
+                    <img src="./Dinner/images/team2.jpg" alt="12" />
+                    <span>Rashed Kabir</span>
+                  </div>
+                  <div class="text">
+                    <a href="">
+                      <span>Read More</span>
+                      <i class="fa-solid fa-angle-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cont-right">
+            <div class="cont-right">
+              <div class="lastest">
+                <p>Latest recipes</p>
+                <div class="cont">
+                  <div class="img">
+                    <img src="./Dinner/images/banner1.jpg" alt="1" />
+                    <a href="">How to make capuchino</a>
+                  </div>
+                  <div class="img">
+                    <img src="./Dinner/images/banner2.jpg" alt="2" />
+                    <a href="">Starbucks blond coffee</a>
+                  </div>
+                  <div class="img">
+                    <img src="./Dinner/images/banner3.jpg" alt="3" />
+                    <a href="">The best Cookie recipes to bake</a>
+                  </div>
+                  <div class="img">
+                    <img src="./Dinner/images/banner4.jpg" alt="4" />
+                    <a href="">How to make capuchino</a>
+                  </div>
+                </div>
+              </div>
+              <div class="trending">
+                <span>Trending posts</span>
+                <div class="cont">
+                  <img src="./Dinner/images/g3.jpg" alt="1" />
+                  <div class="text">
+                    <h2>
+                      12 Curry Recipes<br />
+                      You'll Ever Need
+                    </h2>
+                    <p>Feb 4, 2021</p>
+                  </div>
+                </div>
+                <div class="cont">
+                  <img src="./Dinner/images/g3.jpg" alt="2" />
+                  <div class="text">
+                    <h2>
+                      Sweet<br />
+                      Strawberry Dink<br />
+                      for Summer
+                    </h2>
+                    <p>Feb 5, 2021</p>
+                  </div>
+                </div>
+                <div class="cont">
+                  <img src="./Dinner/images/g6.jpg" alt="3" />
+                  <div class="text">
+                    <h2>
+                      How to make<br />
+                      easiest pancakes<br />
+                      ever
+                    </h2>
+                    <p>Feb 6, 2021</p>
+                  </div>
+                </div>
+              </div>
+              <div class="categori">
+                <div class="cont-cate">
+                  <p>Categories</p>
+                  <ul>
+                    <li>Desserts</li>
+                    <li>Cakes and Biscuits</li>
+                    <li>Food recipes</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="advertise">
+                <div class="cont-adv">
+                  <p>Advertisement</p>
+                  <img src="./Dinner/images/g1.jpg" alt="1" />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="blog-btn">
+          <a class="btn-1" href="">1</a>
+          <a class="btn-2" href="">2</a>
+          <a class="btn-2" href="">3</a>
+          <a class="btn-2" href=""
+            >Next <i class="fa-solid fa-angle-right"></i
+          ></a>
+        </div>
+      </div>
     </section>
     <footer class="footer">
-        <div class="container foot-cont">
-            <div class="item">
-                <div class="col contact">
-                    <a href=""><h2>Diner</h2></a>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et consectetur provident vel cupiditate facere. Aliquid.</p>
-                    <div class="foot-icon">
-                       <a href=""> <i class="fa-brands fa-facebook"></i></a>
-                       <a href=""><i class="fa-brands fa-twitter"></i></a> 
-                       <a href=""><i class="fa-brands fa-instagram"></i></a>
-                       <a href=""><i class="fa-brands fa-linkedin"></i></a> 
-                    </div>
-                </div>
-                <div class="col foot-link">
-                    <h2>Usefull Links</h2>
-                    <a href="">About Us</a>
-                    <a href="">Services</a>
-                    <a href="">Blog posts</a>
-                    <a href="">Careers</a>
-                    <a href="">Contact us</a>
-                </div>
-                <div class="col foot-link">
-                    <h2>More Info</h2>
-                    <a href="">History</a>
-                    <a href="">Vision & Values</a>
-                    <a href="">Awards</a>
-                    <a href="">Media</a>
-                    <a href="">Support</a>
-                </div>
-                <div class="col subcribe">
-                    <h2>Subscribe to our Newsletter</h2>
-                    <p>Enter your email and receive the latest news,<br /> updates and special offers from us. </p>
-                    <input type="email" placeholder="Your Email Address" />
-                    <div >
-                        <button class="foot-btn" >Subcribe Now</button>
-                    </div>
-                </div>
+      <div class="container foot-cont">
+        <div class="item">
+          <div class="col contact">
+            <a href=""><h2>Diner</h2></a>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+              consectetur provident vel cupiditate facere. Aliquid.
+            </p>
+            <div class="foot-icon">
+              <a href=""> <i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
             </div>
-            <div class="coppy">
-                <div class="coppy-left">
-                    <p>© 2021 Diner. All rights reserved. Design by <a href=""> W3Layouts</a></p>
-                </div>
-                <div class="coppy-right">
-                    <a href="">Careers</a>
-                    <a href="">Privacy Policy</a>
-                    <a href="">Contact us</a>
-                </div>
+          </div>
+          <div class="col foot-link">
+            <h2>Usefull Links</h2>
+            <a href="">About Us</a>
+            <a href="">Services</a>
+            <a href="">Blog posts</a>
+            <a href="">Careers</a>
+            <a href="">Contact us</a>
+          </div>
+          <div class="col foot-link">
+            <h2>More Info</h2>
+            <a href="">History</a>
+            <a href="">Vision & Values</a>
+            <a href="">Awards</a>
+            <a href="">Media</a>
+            <a href="">Support</a>
+          </div>
+          <div class="col subcribe">
+            <h2>Subscribe to our Newsletter</h2>
+            <p>
+              Enter your email and receive the latest news,<br />
+              updates and special offers from us.
+            </p>
+            <input type="email" placeholder="Your Email Address" />
+            <div>
+              <button class="foot-btn">Subcribe Now</button>
             </div>
+          </div>
         </div>
-        <button class="backhome"><i class="fa-solid fa-arrow-turn-up"></i></button>
+        <div class="coppy">
+          <div class="coppy-left">
+            <p>
+              © 2021 Diner. All rights reserved. Design by
+              <a href=""> W3Layouts</a>
+            </p>
+          </div>
+          <div class="coppy-right">
+            <a href="">Careers</a>
+            <a href="">Privacy Policy</a>
+            <a href="">Contact us</a>
+          </div>
+        </div>
+        <button class="backhome">
+          <i class="fa-solid fa-arrow-turn-up"></i>
+        </button>
+      </div>
     </footer>
     <!-- Boostrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/blog.js"></script>
   </body>
 </html>
