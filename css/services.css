@@ -127,20 +127,9 @@
     margin-right: 10px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.header__contact a{
+    text-decoration: none;
+}
 
 /* Offer  */
 .offer__item .offer__header p{
@@ -155,6 +144,9 @@
 
 .offer__item .offer__header h2 {
     text-transform: none;
+    font-size: 38px;
+    line-height: 48px;
+    font-weight: 600;
 }
   
 .offer__item p:not(p.title-heading) {
@@ -162,4 +154,334 @@
     line-height: 28px;
     color: #161c2db3;
     font-weight: 400;
+    font-family: 'Quicksand', sans-serif;
 } 
+
+/* Features  */
+.feature {
+    background: #fefefe;
+}
+  
+.feature__item-header {
+    gap: 30px;
+}
+  
+.feature__item {
+    padding: 40px;
+    border: thin solid #eee;
+    border-radius: 6px;
+    box-shadow: 0 25px 98px rgba(0, 0, 0, 0.03);
+}
+  
+.feature__item-header .feature__item-header-icon {
+    width: 70px;
+    height: 70px;
+    background-color: rgba(130, 115, 252, 0.05);
+    border-radius: 8px;
+    display: grid;
+    place-items: center;
+    font-size: 24px;
+    color: #ff6600;
+    transition: all 0.3s ease-in-out;
+}
+  
+.feature__item-header a {
+    display: inline-block;
+    font-size: 22px;
+    color: #000;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+  
+.feature__item-header a:hover {
+    color: #ff6600;
+}
+  
+.feature__item:hover .feature__item-header-icon {
+    background-color: #ff6600;
+}
+  
+.feature__item-header .feature__item-header-icon i {
+    transition: all 0.3s ease-in-out;
+}
+  
+.feature__item:hover:hover .feature__item-header-icon i {
+    color: #fff;
+}
+  
+.feature__item-header .feature__item-text p {
+    font-size: 16.8px;
+    line-height: 26.8px;
+    color: #161c2db3;
+}
+  
+.feature__item > p {
+    font-size: 16.8px;
+    line-height: 26.8px;
+    color: #161c2db3;
+}
+
+/* Middle  */
+.middle {
+    background-image: url("../Dinner/images/banner2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+  
+.middle::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(16, 15, 19, 0.66);
+}
+  
+.middle__top {
+    padding: 48px 0;
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+  
+.middle__top h2 {
+    --font-height: 4.6rem;
+    font-size: 46px;
+    line-height: 56px;
+}
+  
+.middle__buttons {
+    gap: 20px;
+}
+  
+.middle__top .button.button-transparent.button__banner:hover {
+    background-color: #fff;
+    color: #ff6600 !important;
+}
+
+.button {
+    font-size: 16.8px;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all 0.5s;
+    border-radius: 6px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+  
+.button.button-primary {
+    background-color: #ff6600;
+    border: thin solid #ff6600;
+    color: #fff;
+}
+  
+.button.button-submit {
+    width: 200px;
+    height: 56px;
+    text-decoration: none;
+}
+  
+.button.button-subscribe {
+    width: 100%;
+    height: 56px;
+}
+  
+.button.button-contact {
+    width: 100px;
+    height: 48px;
+}
+  
+.button.button-more {
+    width: 144px;
+    height: 54px;
+}
+  
+.button.button-contact:hover,
+.button.button-primary:hover {
+    background-color: #ff8533;
+}
+  
+.button.button-transparent {
+    width: 144px;
+    height: 46px;
+    border-color: #fff;
+    background-color: transparent;
+    color: #fff;
+}
+  
+.button.button-transparent.button__banner {
+    width: 190px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    gap: 1px;
+}
+
+/* Plan  */
+
+
+
+
+
+
+
+
+
+
+
+/* Footer  */
+.footer {
+    background-color: #000;
+}
+.footer .container .item {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+}
+
+.footer .container {
+    padding-top: 3rem;
+}
+  
+.footer .container h2 {
+    margin-bottom: 30px;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+  
+}
+  
+.footer .container .contact a {
+    text-decoration: none;
+}
+  
+.footer .container .contact h2 {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+  
+.footer .container .contact p {
+    color: #899b9d;
+    font-size: 1rem;
+}
+  
+.footer .container .contact .foot-icon {
+    margin-top: 2rem;
+}
+  
+.footer .container .contact .foot-icon a {
+    font-size: 1rem;
+    color: #fe6a03;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-right: 10px;
+}
+  
+.footer .container .foot-link a {
+    text-decoration: none;
+    color: #899b9d ;
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 15px;
+}
+  
+.footer .container .subcribe p {
+    color: #899b9d;
+    font-size: 1rem;
+}
+  
+.footer .container .subcribe input:focus {
+    outline: 0;
+    border: #fe6a03 solid 1px;
+}
+  
+.footer .container .subcribe input {
+    width: 100%;
+    max-height: auto;
+    padding: 15px 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: transparent solid 1px;
+}
+  
+.footer .container .subcribe .foot-btn{
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ff6600;
+    padding: 10px 30%;
+    border: transparent solid 1px;
+    transition: all 0.5s;
+}
+  
+.footer .container .subcribe .foot-btn:hover {
+    opacity: 0.8;
+    border: transparent solid 1px;
+}
+  
+.footer .container .coppy {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+    padding-bottom: 1rem;
+}
+  
+.footer .container .coppy a{
+    text-decoration: none;
+    color: #899b9d;
+    font-size: 1.1rem;
+}
+   
+.footer .container .coppy  .coppy-left {
+    margin-left: 5px;
+}
+   
+.footer .container .coppy  .coppy-right {
+    margin-right: 15px;
+}
+  
+.footer .container .coppy  .coppy-left p {
+    color: #fff;
+    font-size: 1.1rem;
+}
+  
+.footer .container .coppy  .coppy-left a {
+    color: #fe6a03;
+  
+}
+  
+.footer .container .coppy  .coppy-left a:hover {
+    color: #fff;
+    transition: all 0.5s;
+}
+  
+.footer .container .coppy  .coppy-right a {
+    margin-right: 2rem;
+}
+  
+.footer .container .coppy  .coppy-right a:hover {
+    color: #fe6a03;
+    transition: all 0.5s;
+}
+  
+.footer .backhome {
+    padding: 15px 20px;
+    color: #fff;
+    font-size: 1rem;
+    background-color: #fe6a03;
+    border-radius: 50%;
+    margin-right: 0;
+}

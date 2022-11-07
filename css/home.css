@@ -133,7 +133,7 @@
 
 /* Banner  */
 .banner {
-    height: 70rem;
+    height: 700px;
     background-image: linear-gradient(to right, #ff6600, hsl(30deg 100% 1% / 20%)),
       url(../Dinner/images/banner1.jpg);
     background-attachment: fixed;
@@ -148,7 +148,6 @@
 }
   
 .banner__info h2 {
-    --font-height: 5.4rem;
     font-size: 54px;
     line-height: 64px;
     font-weight: 400;
@@ -158,7 +157,6 @@
 }
   
 .banner__info p {
-    --font-height: 1.68rem;
     font-size: 16.8px;
     line-height: 26.8px;
     margin: 38px 0;
@@ -170,7 +168,7 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
-    border: 0.2rem solid #fff;
+    border: 2px solid #fff;
 }
   
 .banner__info .button.button-transparent.button__banner:hover {
@@ -179,12 +177,32 @@
 }
 
 /* About Us  */
+.aboutUs{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.aboutUs .container{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.aboutUs__item .aboutUs__header p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: #ff6600;
+    display: block;
+    font-family: 'Pacifico', cursive;
+}
+
 .aboutUs__item .aboutUs__header h2 {
     text-transform: none;
 }
   
 .aboutUs__item p:not(p.title-heading) {
-    --font-height: 1.8rem;
     font-size: 18px;
     line-height: 28px;
     color: #161c2db3;
@@ -215,6 +233,7 @@
 .info .info__item-right {
     background-color: #ff6600;
     padding: 64px 72px;
+    min-height: 600px;
 }
   
 .info__item-right > p {
@@ -266,6 +285,7 @@
     text-transform: capitalize;
     display: inline-block;
     color: #000;
+    text-decoration: none;
 }
   
 .info__item-right-item > p {
@@ -368,6 +388,8 @@
 /* Feature */
 .feature {
     background: #fefefe;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
   
 .feature__item-header {
@@ -382,7 +404,6 @@
 }
   
 .feature__item-header .feature__item-header-icon {
-    --square: 7rem;
     width: 70px;
     height: 70px;
     background-color: rgba(130, 115, 252, 0.05);
@@ -400,6 +421,7 @@
     color: #000;
     font-weight: 600;
     text-transform: capitalize;
+    text-decoration: none;
 }
   
 .feature__item-header a:hover {
@@ -419,14 +441,12 @@
 }
   
 .feature__item-header .feature__item-text p {
-    --font-height: 1.68rem;
     font-size: 16.8px;
     line-height: 26.8px;
     color: #161c2db3;
 }
   
 .feature__item > p {
-    --font-height: 1.68rem;
     font-size: 16.8px;
     line-height: 26.8px;
     color: #161c2db3;
@@ -554,7 +574,6 @@
 }
   
 .number__item i {
-    --square: 6.8rem;
     width: 68px;
     height: 68px;
     color: #fff;
@@ -565,13 +584,11 @@
 }
   
 .number__item h2 {
-    --font-height: 3.6rem;
     font-size: 36px;
     line-height: 46px;
 }
   
 .number__item h4 {
-    --font-height: 1.8rem;
     font-size: 18px;
     line-height: 28px;
     text-transform: capitalize;
@@ -738,7 +755,29 @@
 .testimonials {
     background-color: #fff;
 }
-  
+
+.testimonials .testimonials__content{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.testimonials .testimonials__content .testimonials__header p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: #ff6600;
+    display: block;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+}
+
+.testimonials .testimonials__content .testimonials__header h2{
+    font-size: 28px;
+    line-height: 48px;
+    font-weight: 600;
+    text-align: center;
+}
 .testimonials__item {
     width: 700px;
     margin: 0 auto;
@@ -772,7 +811,6 @@
 }
   
 .testimonials__item > p {
-    --font-height: 1.8rem;
     font-size: 18px;
     line-height: 28px;
     color: #161c2db3;;
@@ -942,7 +980,69 @@
     margin-right: 0;
 }
 
+/* For all mobile and tablet */
 
+@media only screen and (max-width: 1023px) {
+    .hide-on-mobile-tablet {
+      display: none !important;
+    }
+  
+    .stats {
+      margin-top: 20px;
+    }
+}
+  
+/* For mobile only */
+@media only screen and (max-width: 739px) {
+    .hide-on-mobile {
+        display: none !important;
+    }
+    /* Banner */
+  .banner{
+    height: 43px;
+  }
+  .banner__info{
+    padding: 120px 0 40px;
+  }
+  .banner__info h2{
+    --font-height: 3.2rem;
+  }
+  /* Info  */
+  .info .info__item-right{
+    padding: 46px 28px;
+  }
+
+  /* New  */
+  .news__info{
+    padding: 14px 24px !important;
+  }
+  .news__info a h4{
+    --font-height: 1.8rem;
+  }
+  .news__info h6{
+    margin-top: 6px !important;
+  }
+  .testimonials__item{
+    width: 100%;
+  }
+    
+}
+  
+/* For tablet only */
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+    .hide-on-tablet {
+      display: none !important;
+    }
+  
+    .middle__top h2 {
+      --font-height: 4.2rem;
+      font-weight: 500;
+    }
+  
+    .middle__buttons {
+      margin-top: 4rem;
+    }
+}
 
 
 
