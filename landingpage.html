@@ -1,121 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing page</title>
-        <!-- Boostrap -->
-        <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-      />
-      <!-- Animation -->
-      <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-      />
-      <!-- GG font -->
-      <link
-        href="//fonts.googleapis.com/css2?family=Pacifico&display=swap"
-        rel="stylesheet"
-      />
-      <link
-        href="//fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet"
-      />
-      <!-- Fontawesome -->
-      <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      />
-      <!-- CSS -->
-      <link rel="stylesheet" href="./css/landingpage.css" />
-</head>
-<body>
+    <!-- Boostrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Animation -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- GG font -->
+    <link
+      href="//fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="//fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/landingpage.css" />
+  </head>
+  <body>
     <!-- Header -->
     <header class="header">
-        <div class="container header-cont">
-          <div class="head-left">
-            <a href=""><h1>Diner</h1></a>
-            <h2>The Only Thing We Love More Than Food Is You!</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, atque.</p>
-            <button>Read More <i class="fa-solid fa-angle-right"></i></button>
+      <div class="container header-cont">
+        <div class="head-left">
+          <a href=""><h1>Diner</h1></a>
+          <h2>The Only Thing We Love More Than Food Is You!</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis,
+            atque.
+          </p>
+          <button class="btn-head">
+            Read More <i class="fa-solid fa-angle-right"></i>
+          </button>
+        </div>
+        <div class="head-right">
+          <div class="form">
+            <form action="">
+              <input type="search" placeholder="Search here..." />
+              <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+            </form>
           </div>
-          <div class="head-right">
-            <div class="form">
-              <form action="">
-                <input type="search" placeholder="Search here..." />
-                <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
-              </form>
-            </div>
-            <div class="theme">
-              <button class="btn" id="switchTheme" title="Click to switch theme">
-                <i class="far fa-moon"></i>
-                <i class="far fa-sun"></i>
-              </button>
-            </div>
-            <div class="nav">
-              <!-- Button trigger modal -->
-              <button
-                type="button" class="btn " data-bs-toggle="modal" data-bs-target="#exampleModal">
-                <nav class="navbar">
-                  <span class="navbar-toggler-icon navbar-white"></span>
-                </nav>
-              </button>
-              <!-- Modal -->
-              <div
-                class="modal fade"
-                id="exampleModal"
-                tabindex="-1"
-                aria-labelledby="exampleModalLabel"
-                aria-hidden="true"
-              >
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
-                    </div>
-                    <div class="modal-body">
-                      <a href="">Home</a>
-                      <a href="">About</a>
-                      <a href="">Services</a>
-                      <a href="">Blog</a>
-                      <a href="">404</a>
-                      <a href="">Landing Page</a>
-                      <a href="">Contact</a>
-                      <a href="">Shot codes</a>
-                      <a href="">Email</a>
-                    </div>
-                    <div class="modal-footer">
-                      <button
-                        type="button"
-                        class="btn btn-secondary"
-                        data-bs-dismiss="modal"
-                        style="display:none ;"
-                      >
-                        Close
-                      </button>
-                      <button type="button" class="btn btn-primary" style="display:none ;">
-                        Save changes
-                      </button>
-                    </div>
+          <div class="theme">
+            <button class="btn" id="switchTheme" title="Click to switch theme">
+              <i class="far fa-moon"></i>
+              <i class="far fa-sun"></i>
+            </button>
+          </div>
+          <div class="nav">
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <nav class="navbar">
+                <span class="navbar-toggler-icon navbar-white"></span>
+              </nav>
+            </button>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <a href="">Home</a>
+                    <a href="">About</a>
+                    <a href="">Services</a>
+                    <a href="">Blog</a>
+                    <a href="">404</a>
+                    <a href="">Landing Page</a>
+                    <a href="">Contact</a>
+                    <a href="">Shot codes</a>
+                    <a href="">Email</a>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                      style="display: none"
+                    >
+                      Close
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      style="display: none"
+                    >
+                      Save changes
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-
         </div>
-      </header>
+      </div>
+    </header>
     <!-- About us -->
-    
+    <section class="about">
+      <div class="container about-cont">
+        <div class="about-left">
+          <p>About Us</p>
+          <h2>We found our creative space that is open for you.</h2>
+        </div>
+        <div class="about-right">
+          <p>
+            Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices
+            in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet elit. Non
+            quae, fugiat nihil ad. Lorem ipsum dolor sit amet. Lorem ipsum init
+            dolor sit, amet elit. Dolor ipsum non velit, culpa!Lorem ipsum init
+            dolor sit.
+          </p>
+          <p>
+            Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices
+            in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet elit. Non
+            quae, fugiat nihil ad. Lorem ipsum dolor sit amet.
+          </p>
+        </div>
+      </div>
+    </section>
     <!-- Evaluate -->
+    <section class="evaluate">
+      <div class="eva-cont">
+        <div class="eva-left"></div>
+        <div class="eva-right"></div>
+      </div>
+    </section>
     <!-- Our team -->
     <!-- News -->
     <!-- Lastest -->
@@ -123,6 +162,5 @@
     <!-- Contact -->
     <!-- Boostrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
-
-</body>
+  </body>
 </html>

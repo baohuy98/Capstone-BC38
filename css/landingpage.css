@@ -25,10 +25,10 @@
   }
   .header .header-cont {
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 2.5fr 1fr;
   }
   .navbar-toggler-icon {
-    margin-top: -200px;
+    margin-top: -435px;
 
   }
   .header .header-cont {
@@ -95,4 +95,60 @@
     color: #fe6a03;
     transition: all 0.5s;
   }
+  .header .head-left h2 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-top: 5rem;
+    color: #fff;
+    
+  }
+  .header .head-left p {
+    color: #fff ;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+  }
+  .header .head-left button {
+    margin-top: 1.5rem;
+    color: #fff;
+    font-weight: 900;
+    font-size: 1rem;
+    padding: 15px 40px;
+    border-radius: 10px;
+    border: #fff solid 2px;
+    background-color: transparent;
+  }
 
+  .header .head-left .btn-head:hover {
+    background-color: #fff;
+    color: #fe6a03;
+    transition: all 0.5s;
+  }
+
+/* About */
+.about {
+  background-color: #fff;
+}
+.about .about-cont {
+  display: flex;
+  margin-top: 5rem;
+  flex-wrap: nowrap;
+}
+.about .about-cont .about-right {
+  margin-left: 5rem;
+}
+.about .about-cont .about-right p {
+  font-size: 1.2rem;
+  font-family:'Quicksand', sans-serif;
+  color: #b2b4b9;
+  line-height: 35px;
+}
+.about .about-cont .about-left p {
+  color: #fe6a03;
+  font-family:'Pacifico', cursive;
+  font-size: 1.5rem;
+}
+.about .about-cont .about-left h2 {
+  font-size: 3rem;
+  font-weight: 500;
+
+}
