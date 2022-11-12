@@ -51,14 +51,57 @@
                         aria-label="Toggle navigation">
                         <i class="fa-solid fa-bars"></i>
                     </button>
-                    <div class="header__navbar-collapse collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="header__nav navbar-nav">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            <a class="nav-link" href="#">About</a>
-                            <a class="nav-link" href="#">Services</a>
-                            <a class="nav-link" href="#">Blog</a>
-                            <a class="nav-link" href="#">Contact</a>
-                            <a class="nav-link" href="#">Email</a>
+                    <div class="nav">
+                        <!-- Button trigger modal -->
+                        <button
+                          type="button" class="btn " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                          <nav class="navbar">
+                            <span class="navbar-toggler-icon navbar-white"></span>
+                          </nav>
+                        </button>
+                        <!-- Modal -->
+                        <div
+                          class="modal fade"
+                          id="exampleModal"
+                          tabindex="-1"
+                          aria-labelledby="exampleModalLabel"
+                          aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button
+                                  type="button"
+                                  class="btn-close"
+                                  data-bs-dismiss="modal"
+                                  aria-label="Close"
+                                ></button>
+                              </div>
+                              <div class="modal-body">
+                                <a href="">Home</a>
+                                <a href="">About</a>
+                                <a href="">Services</a>
+                                <a href="">Blog</a>
+                                <a href="">404</a>
+                                <a href="">Landing Page</a>
+                                <a href="">Contact</a>
+                                <a href="">Shot codes</a>
+                                <a href="">Email</a>
+                              </div>
+                              <div class="modal-footer">
+                                <button
+                                  type="button"
+                                  class="btn btn-secondary"
+                                  data-bs-dismiss="modal"
+                                  style="display:none ;"
+                                >
+                                  Close
+                                </button>
+                                <button type="button" class="btn btn-primary" style="display:none ;">
+                                  Save changes
+                                </button>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                     </div>
                 </div>
@@ -66,7 +109,7 @@
             <div class="header__contact d-flex justify-content-center align-items-center">
                 <p>
                     <a href="#">Home</a>
-                    <i class="fa-solid fa-chevron-right"></i> About
+                    <i class="fa-solid fa-chevron-right"></i> Services
                 </p>
             </div>
         </div>
@@ -230,13 +273,136 @@
 
     <!-- Plan  -->
     <section class="plan">
-        <div class="container">
-            <div class="header-plan">
-                <header class="section-heading offer__header">
-                    <p class="title-heading">Plans</p>
-                    <h2>Our Menu</h2>
-                </header>
-                
+        <div class="container py-lg-5 py-md-3 py-2">
+            <div class="header-title text-center"> 
+                <h5>Plans</h5>
+                <h3>Our Menu</h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 menu-section pr-lg-5">
+                    <div class="menu-item">
+                        <div class="mb-4">
+                            <div class="row border-dot no-gutters">
+                                <div class="col-8 menu-item-name">
+                                    <h4>Slow Cooked Egg</h4>
+                                </div>
+                                <div class="col-4 menu-item-price text-right">
+                                    <h5>$79.50</h5>
+                                </div>
+                            </div>
+                            <div class="menu-item-text">
+                                <p>Lorem ipsum dolor sit amet adipiscing.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="mb-4">
+                            <div class="row border-dot no-gutters">
+                                <div class="col-8 menu-item-name">
+                                    <h4>Slow Cooked Egg</h4>
+                                </div>
+                                <div class="col-4 menu-item-price text-right">
+                                    <h5>$79.50</h5>
+                                </div>
+                            </div>
+                            <div class="menu-item-text">
+                                <p>Lorem ipsum dolor sit amet adipiscing.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="mb-4">
+                            <div class="row border-dot no-gutters">
+                                <div class="col-8 menu-item-name">
+                                    <h4>Slow Cooked Egg</h4>
+                                </div>
+                                <div class="col-4 menu-item-price text-right">
+                                    <h5>$79.50</h5>
+                                </div>
+                            </div>
+                            <div class="menu-item-text">
+                                <p>Lorem ipsum dolor sit amet adipiscing.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="mb-4">
+                            <div class="row border-dot no-gutters">
+                                <div class="col-8 menu-item-name">
+                                    <h4>Slow Cooked Egg</h4>
+                                </div>
+                                <div class="col-4 menu-item-price text-right">
+                                    <h5>$79.50</h5>
+                                </div>
+                            </div>
+                            <div class="menu-item-text">
+                                <p>Lorem ipsum dolor sit amet adipiscing.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 menu-section">
+                    <div class="menu-item">
+                        <div class="mb-4">
+                            <div class="row border-dot no-gutters">
+                                <div class="col-8 menu-item-name">
+                                    <h4>Slow Cooked Egg</h4>
+                                </div>
+                                <div class="col-4 menu-item-price text-right">
+                                    <h5>$79.50</h5>
+                                </div>
+                            </div>
+                            <div class="menu-item-text">
+                                <p>Lorem ipsum dolor sit amet adipiscing.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="mb-4">
+                            <div class="row border-dot no-gutters">
+                                <div class="col-8 menu-item-name">
+                                    <h4>Slow Cooked Egg</h4>
+                                </div>
+                                <div class="col-4 menu-item-price text-right">
+                                    <h5>$79.50</h5>
+                                </div>
+                            </div>
+                            <div class="menu-item-text">
+                                <p>Lorem ipsum dolor sit amet adipiscing.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="mb-4">
+                            <div class="row border-dot no-gutters">
+                                <div class="col-8 menu-item-name">
+                                    <h4>Slow Cooked Egg</h4>
+                                </div>
+                                <div class="col-4 menu-item-price text-right">
+                                    <h5>$79.50</h5>
+                                </div>
+                            </div>
+                            <div class="menu-item-text">
+                                <p>Lorem ipsum dolor sit amet adipiscing.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="mb-4">
+                            <div class="row border-dot no-gutters">
+                                <div class="col-8 menu-item-name">
+                                    <h4>Slow Cooked Egg</h4>
+                                </div>
+                                <div class="col-4 menu-item-price text-right">
+                                    <h5>$79.50</h5>
+                                </div>
+                            </div>
+                            <div class="menu-item-text">
+                                <p>Lorem ipsum dolor sit amet adipiscing.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -292,34 +458,6 @@
             </div>
         </div>
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
