@@ -52,15 +52,57 @@
                         aria-label="Toggle navigation">
                         <i class="fa-solid fa-bars"></i>
                     </button>
-                    <div class="header__navbar-collapse collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="header__nav navbar-nav">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            <a class="nav-link" href="#">About</a>
-                            <a class="nav-link" href="#">Services</a>
-                            <a class="nav-link" href="./blog.html">Blog</a>
-                            <a class="nav-link" href="./contact.html">Contact</a>
-                            <a class="nav-link" href="#">Email</a>
-                            <a class="nav-link" href="./landingpage.html">Landing Page</a>
+                    <div class="nav">
+                        <!-- Button trigger modal -->
+                        <button
+                          type="button" class="btn " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                          <nav class="navbar">
+                            <span class="navbar-toggler-icon navbar-white"></span>
+                          </nav>
+                        </button>
+                        <!-- Modal -->
+                        <div
+                          class="modal fade"
+                          id="exampleModal"
+                          tabindex="-1"
+                          aria-labelledby="exampleModalLabel"
+                          aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button
+                                  type="button"
+                                  class="btn-close"
+                                  data-bs-dismiss="modal"
+                                  aria-label="Close"
+                                ></button>
+                              </div>
+                              <div class="modal-body">
+                                <a href="./index.html">Home</a>
+                                <a href="./about.html">About</a>
+                                <a href="./service.html">Services</a>
+                                <a href="./blog.html">Blog</a>
+                                <a href="#">404</a>
+                                <a href="./landingpage.html">Landing Page</a>
+                                <a href="./contact.html">Contact</a>
+                                <a href="#">Shot codes</a>
+                                <a href="./email.html">Email</a>
+                              </div>
+                              <div class="modal-footer">
+                                <button
+                                  type="button"
+                                  class="btn btn-secondary"
+                                  data-bs-dismiss="modal"
+                                  style="display:none ;"
+                                >
+                                  Close
+                                </button>
+                                <button type="button" class="btn btn-primary" style="display:none ;">
+                                  Save changes
+                                </button>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                     </div>
                 </div>
