@@ -400,3 +400,36 @@
     margin-bottom: 40px;
   }
  }
+
+ /* For all mobile and tablet */
+
+@media only screen and (max-width: 1023px) {
+  .hide-on-mobile-tablet {
+    display: none !important;
+  }
+}
+
+/* For mobile only */
+
+@media only screen and (max-width: 739px) {
+  .hide-on-mobile {
+    display: none !important;
+  }
+
+  /* button */
+
+  .btn {
+    font-size: 16px;
+  }
+
+  .btn .btn-primary {
+    width: 148px;
+  }
+}
+
+/* For tablet only */
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+  .hide-on-tablet {
+    display: none !important;
+  }
+}

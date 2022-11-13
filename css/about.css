@@ -590,114 +590,6 @@
   margin-right: 0;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Footer  */
 .footer {
     background-color: #000;
@@ -818,3 +710,46 @@
     border-radius: 50%;
     margin-right: 0;
   }
+
+/* For all mobile and tablet */
+
+@media only screen and (max-width: 1023px) {
+  .hide-on-mobile-tablet {
+    display: none !important;
+  }
+
+  .grid > h2 {
+    display: block;
+  }
+}
+
+/* For mobile only */
+
+@media only screen and (max-width: 739px) {
+  .hide-on-mobile {
+    display: none !important;
+  }
+
+  .ab-right > h3 {
+    --font-height: 26px;
+  }
+
+  .grid > h2 {
+    --font-height: 26px;
+  }
+
+  .grid > p {
+    --font-height: 16px;
+  }
+
+  .btn.btn-primary {
+    width: 160px;
+  }
+}
+
+/* For tablet only */
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+  .hide-on-tablet {
+    display: none !important;
+  }
+}
